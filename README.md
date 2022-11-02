@@ -1,1 +1,3 @@
 # Desafio-socketsUdp-java-17
+
+Fazer um aplicativo que envie uma mensagem através da rede ethernet usando um  proprietário padrão. Esse aplicativo pode ser feito em qualquer linguagem de  programação, desde que a mesma tenha a biblioteca sockets. 2. Fazer um aplicativo que recebe a mensagem enviada pelo aplicativo acima com o  protocolo proprietário. Esse aplicativo deve verificar se a mensagem recebida está correta  ou não. Se a mensagem estiver correta, apresentar a mesma na tela e informar que a  mensagem está correta. Se a mensagem não estiver correta, apenas informar que a  mensagem está errada.
