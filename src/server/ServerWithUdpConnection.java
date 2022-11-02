@@ -6,7 +6,7 @@ import java.util.*;
 public class ServerWithUdpConnection {
     public static void main(String[] args) throws Exception {
 
-        DatagramSocket serverSocket = new DatagramSocket(6969);
+        DatagramSocket serverSocket = new DatagramSocket(6699);
         System.out.println("Server online.");
 
         byte[] messageReceived = new byte[1024];

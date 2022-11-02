@@ -10,7 +10,7 @@ public class ClientUdpConnection {
         DatagramSocket datagramSocket = new DatagramSocket();
         Scanner sc = new Scanner(System.in);
         System.out.print("Message: ");
-        String text = null;
+        String text;
 
         if (sc.hasNext()) {
             text = sc.nextLine();
@@ -32,7 +32,7 @@ public class ClientUdpConnection {
         byteArrayWithMessageAndPlusPosition[textWithParam.length()] = sumMessage;
 
         InetAddress ip = InetAddress.getByName("127.0.0.1");
-        DatagramPacket packetToSend = new DatagramPacket(byteArrayWithMessageAndPlusPosition, byteArrayWithMessageAndPlusPosition.length, ip, 6969);
+        DatagramPacket packetToSend = new DatagramPacket(byteArrayWithMessageAndPlusPosition, byteArrayWithMessageAndPlusPosition.length, ip, 6699);
         datagramSocket.send(packetToSend);
 
         byte[] messageReceivedFromServer = new byte[13];
