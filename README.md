@@ -21,6 +21,6 @@ O servidor faz a validação através de um cálculo de <b>XOR</b> novamente, es
 ![image](https://user-images.githubusercontent.com/101574001/199559412-cadb3091-ff84-4707-8e70-b8078e24638e.png) <br><br>
 
 E finalmente o servidor faz um for e um if para conferir se a <b>checksum</b> bate com a sum que foi enviada para o servidor junto a mensagem, ou seja, '2mensagem3BCC'. Após e finalmente, um replace para trocar o header, footer e bytes 0 por nada, deixando apenas a mensagem para o cliente. <br><br>
-![image](https://user-images.githubusercontent.com/101574001/199559864-f524616a-0097-4368-a9ae-e0425aa8d853.png)  <br><br>
+![image](https://user-images.githubusercontent.com/101574001/200041186-33e8e73b-d993-40b3-8a99-a62d57065cec.png) <br><br>
 
 
