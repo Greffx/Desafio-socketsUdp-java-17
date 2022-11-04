@@ -28,6 +28,8 @@ public class ClientUdpConnection {
             sumMessage ^= b;
         }
 
+        System.out.println(sumMessage);
+
         System.arraycopy(byteArrayWithMessage, 0, byteArrayWithMessageAndPlusPosition, 0, byteArrayWithMessage.length); //o array fonte, tamanho inicial do array fonte, array destinário, tamanho do array dest, e a qtd de elementos a ser copiado 
         byteArrayWithMessageAndPlusPosition[textWithParam.length()] = sumMessage;
 

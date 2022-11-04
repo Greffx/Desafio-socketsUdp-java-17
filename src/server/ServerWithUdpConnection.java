@@ -36,10 +36,13 @@ public class ServerWithUdpConnection {
             textReceived = textReceived.replace("\2", "");
             textReceived = textReceived.replace("\3", "");
 
-            if (byteArrayTextReceived[i] == finalChecksum) {
-                System.out.println("test ok");
-            } else {
-                System.out.println("Message's wrong, try again.");
+            if (byteArrayTextReceived[i] == 0x03) {
+                if (byteArrayTextReceived[i + 1] == finalChecksum) {
+                    System.out.println("Test ok. ");
+                    break;
+                } else {
+                    System.out.println("Message's wrong, try again.");
+                }
             }
         }
 
